@@ -4,11 +4,10 @@
     <head>
         <title>Aula Front End</title> <!-- Tag obrigatória com o título da página -->
         <meta charset="UTF-8"> <!-- Codificação  UTF-8, aceita acentuação -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/logo.png"> <!-- Coloca uma imagem ao lado do título -->
 
         <!-- JQuery -->
         <script src="libs/jquery-3.1.0.min.js"></script>
-
 
         <!-- Semantic UI -->
         <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
@@ -22,19 +21,27 @@
     <body>
 
         <header>
-            <nav id="computerTabletMenu" class="ui fixed inverted menu">
+            <!-- 
+                top: deixa no topo
+                fixed: deixa fixo, de modo que sempre aparece, até quando o scroll é deslizado para baixo
+                inverted: deixa o fundo preto e a letra branca
+            -->
+            <nav id="computerTabletMenu" class="ui top fixed inverted menu">
                 <div class="ui container"> <!-- semantic faz o elemento com ui container ocupar 1127px e centralizado numa tela grande-->
                     <a href="index.html" class="header item">
                         <img class="logo" alt="logo semantic-ui" src="images/logo.png">
                         Home
                     </a>
                     <a href="formulario.html" class="item">Formulário</a>
+                    <!-- 
+                        simple permite que o dropdown abra sem javascript
+                    -->
                     <div class="ui simple dropdown item">
                         Exemplos <i class="dropdown icon"></i>
-                        <div class="menu">
+                        <nav class="menu">
                             <a class="item" href="#">Cards</a>
                             <a class="item" href="#">Link Item</a>
-                        </div>
+                        </nav>
                     </div>
                     <nav class="right menu">
                         <a id="loginBtn" href="#" class="item">LOGIN</a>
@@ -43,7 +50,7 @@
                 </div>
             </nav>
 
-            <nav id='mobileMenu' class="ui fixed menu">
+            <nav id='mobileMenu' class="ui top fixed menu">
                 <a class="item">
                     <i class="sidebar icon"></i>
                     Menu
@@ -52,13 +59,42 @@
 
         </header>
 
-        <main>
+        <main class="ui container">
 
+            <section class="ui items">
+
+                <article id="item1" class="item">
+                    <figure id="primeiraImagem" class="image">
+                        <img src="images/1.png" alt="folha verde">
+                    </figure>
+                    <div class="content">
+                        <a class="header">Folha Verde</a>
+                        <div class="meta">
+                            <span>Descrição</span>
+                        </div>
+                        <div class="description">
+                            <p>Apenas uma folha verde</p>
+                        </div>
+                        <div class="extra">
+                            <div id="btnVerde" class="ui primary animated fade button">
+                                <div class="visible content">Desaparecer imagem</div>
+                                <div class="hidden content">Basta clicar!</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
 
         </main>
 
-        <aside class="ui bottom attached segment pushable">
-            <nav class="ui inverted labeled icon left inline vertical sidebar menu">
+        <aside>
+            <!-- 
+               labeled icon: deixa os ícones grandes
+               left: faz esse menu abrir na esquerda
+               vertical: faz os itens do menu aparecerem verticalmente
+               sidebar: indica que é essa barra lateral oculta
+            -->
+            <nav class="ui inverted labeled icon left vertical sidebar menu">
                 <a class="item">
                     <i class="home icon"></i>
                     Home

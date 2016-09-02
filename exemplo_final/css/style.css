@@ -2,8 +2,12 @@ body{
     background: #F7F7F7; /* Faz com que toda a página tenha como cor de fundo cinza*/
 }
 
-.ui.menu{
-    margin-top: 0; /* Garante que não haverá margem superior no menu*/
+main{
+    margin-top: 60px;
+}
+
+section.ui.items{
+    padding: 14px; /* Cria um espaço de 14 pixels entre a borda e o conteúdo*/
 }
 
 .ui.menu .item img.logo{
