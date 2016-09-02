@@ -15,9 +15,12 @@ $(document).ready(function () {
                     animation: 'fly left',
                     duration: '1s',
                     onComplete: function () {
-                      console.log("acionado");
+                        console.log("acionado");
                     }
                 });
     });
-    
+
+    $('.ui.checkbox')
+            .checkbox()
+            ;
 });

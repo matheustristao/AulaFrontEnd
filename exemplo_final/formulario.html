@@ -61,29 +61,31 @@
         </header>
 
         <main class="ui container">
+            <section class="ui stackable grid">
 
-            <section class="ui items">
+                <div class="centered row">
+                    <section class="six wide column">
 
-                <article id="item1" class="item">
-                    <figure id="primeiraImagem" class="image">
-                        <img src="images/1.png" alt="folha verde">
-                    </figure>
-                    <div class="content">
-                        <div class="header">Folha Verde</div>
-                        <div class="meta">Descrição</div>
-                        <div class="description">
-                            <p>Apenas uma folha verde</p>
-                        </div>
-                        <div class="extra">
-                            <div id="btnVerde" class="ui primary animated fade button">
-                                <div class="visible content">Desaparecer imagem</div>
-                                <div class="hidden content">Basta clicar!</div>
+                        <form class="ui form">
+                            <div class="field">
+                                <label>Nome completo</label>
+                                <input type="text" name="nome" placeholder="Ex: Matheus Oliveira Tristão">
                             </div>
-                        </div>
-                    </div>
-                </article>
+                            <div class="field">
+                                <label>Instituição de ensino</label>
+                                <input type="text" name="last-name" placeholder="Ex: Universidade de Brasília, IESGO, Universidade Católica">
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox" style="float: left">
+                                    <input type="checkbox">
+                                </div>
+                                <label>Eu concordo com os <span id="termos">termos e condições</span></label>
+                            </div>
+                            <button class="ui primary button" type="submit">Enviar</button>
+                        </form>
+                    </section>
+                </div>
             </section>
-
         </main>
 
         <aside>

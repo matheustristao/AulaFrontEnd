@@ -18,6 +18,12 @@ nav#mobileMenu{
     display: none;  /* Esconde o menu mobile */
 }
 
+span#termos{
+    color: #1678c2; /*Altera a cor do texto*/
+    font-weight: bold; /* Deixa o texto em negrito*/
+    cursor: pointer; /* Altera o ponteiro do mouse para mão*/
+}
+
 /* 
     O código CSS abaixo só servira para larguras menores ou iguais a 767px
     Adotado 'breakpoint'' com base na largura do IPAD, de 768px 
