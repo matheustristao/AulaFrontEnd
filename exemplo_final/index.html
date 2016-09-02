@@ -6,21 +6,88 @@
         <meta charset="UTF-8"> <!-- Codificação  UTF-8, aceita acentuação -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="libs/dist/semantic.min.css">
-        <script src="semantic/dist/semantic.min.js"></script>
+        <!-- JQuery -->
+        <script src="libs/jquery-3.1.0.min.js"></script>
+
+
+        <!-- Semantic UI -->
+        <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
+        <script src="libs/semantic/semantic.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+
+        <script src="js/script.js"></script>
+
     </head>
     <body>
-        <div class="demo">
-            
-        </div>
-        <div class="demo">
-            
-        </div>
-        
-    <script>
-        document.getElementsByClassName("demo").innerHTML = "oi";
-            
-    </script>
+
+        <header>
+            <nav id="computerTabletMenu" class="ui fixed inverted menu">
+                <div class="ui container"> <!-- semantic faz o elemento com ui container ocupar 1127px e centralizado numa tela grande-->
+                    <a href="index.html" class="header item">
+                        <img class="logo" alt="logo semantic-ui" src="images/logo.png">
+                        Home
+                    </a>
+                    <a href="formulario.html" class="item">Formulário</a>
+                    <div class="ui simple dropdown item">
+                        Exemplos <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item" href="#">Cards</a>
+                            <a class="item" href="#">Link Item</a>
+                        </div>
+                    </div>
+                    <nav class="right menu">
+                        <a id="loginBtn" href="#" class="item">LOGIN</a>
+                        <a href="index.html" class="item">SAIR</a>
+                    </nav>
+                </div>
+            </nav>
+
+            <nav id='mobileMenu' class="ui fixed menu">
+                <a class="item">
+                    <i class="sidebar icon"></i>
+                    Menu
+                </a>
+            </nav>
+
+        </header>
+
+        <main>
+
+
+        </main>
+
+        <aside class="ui bottom attached segment pushable">
+            <nav class="ui inverted labeled icon left inline vertical sidebar menu">
+                <a class="item">
+                    <i class="home icon"></i>
+                    Home
+                </a>
+                <a class="item">
+                    <i class="block layout icon"></i>
+                    Formulário
+                </a>
+                <a class="item">
+                    <i class="users icon"></i>
+                    Cards
+                </a>
+                <a class="item">
+                    <i class="check circle icon"></i>
+                    LOGIN
+                </a>
+                <a class="item">
+                    <i class="remove circle icon"></i>
+                    SAIR
+                </a>
+            </nav>
+        </aside>
+
+
+        <footer>
+
+        </footer>
+
+
     </body>
-    
+
 </html>

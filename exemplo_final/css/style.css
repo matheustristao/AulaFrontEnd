@@ -1,0 +1,30 @@
+body{
+    background: #F7F7F7; /* Faz com que toda a página tenha como cor de fundo cinza*/
+}
+
+.ui.menu{
+    margin-top: 0; /* Garante que não haverá margem superior no menu*/
+}
+
+.ui.menu .item img.logo{
+    margin-right: 16px; /* Cria uma margem à direita de 16px na imagem do menu */
+}
+
+nav#mobileMenu{
+    display: none;  /* Esconde o menu mobile */
+}
+
+/* 
+    O código CSS abaixo só servira para larguras menores ou iguais a 767px
+    Adotado 'breakpoint'' com base na largura do IPAD, de 768px 
+*/
+@media(max-width: 767px){
+    nav#computerTabletMenu{
+        display: none;  
+    }
+
+    nav#mobileMenu{
+        display: block;  
+    }
+
+}
