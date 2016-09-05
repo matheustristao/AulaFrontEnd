@@ -66,14 +66,14 @@
                 <div class="centered row">
                     <section class="six wide column">
 
-                        <form class="ui form">
+                        <form id="formulario" class="ui form">
                             <div class="field">
                                 <label>Nome completo</label>
                                 <input type="text" name="nome" placeholder="Ex: Matheus Oliveira Tristão">
                             </div>
                             <div class="field">
                                 <label>Instituição de ensino</label>
-                                <input type="text" name="last-name" placeholder="Ex: Universidade de Brasília, IESGO, Universidade Católica">
+                                <input type="text" name="ensino" placeholder="Ex: Universidade de Brasília, IESGO, Universidade Católica">
                             </div>
                             <div class="field">
                                 <div class="ui checkbox" style="float: left">
@@ -81,9 +81,21 @@
                                 </div>
                                 <label>Eu concordo com os <span id="termos">termos e condições</span></label>
                             </div>
-                            <button class="ui primary button" type="submit">Enviar</button>
                         </form>
+                        <button id="submit" class="ui primary button" type="submit">Enviar</button>
+                        <button id="limpar" class="ui negative button" type="submit">Limpar</button>
                     </section>
+                </div>
+            </section>
+
+            <section class="ui modal">
+                <div class="header">Termos e condições</div>
+                <div class="content">
+                    <ul>
+                        <li>Exemplo de condição</li>
+                        <li>Exemplo de condição</li>
+                        <li>Exemplo de condição</li>
+                    </ul>
                 </div>
             </section>
         </main>

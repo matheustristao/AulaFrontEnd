@@ -20,7 +20,34 @@ $(document).ready(function () {
                 });
     });
 
-    $('.ui.checkbox')
-            .checkbox()
-            ;
+    $('.ui.checkbox').checkbox();
+
+    $("#termos").click(function () {
+        $('.ui.modal')
+                .modal('show')
+                ;
+    });
+
+    $("button#submit").click(function () {
+
+        var url = "php/server.php"; //url para onde o formulário vai ser enviado
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $("#formulario").serialize(),
+            success: function (data)
+            {
+                alert(data);
+            }, error: function (err) {
+                alert(" Status " + err.status + "\n statusText:  " + err.statusText);
+            }
+        });
+
+    });
+
+    $("button#limpar").click(function () {
+        $("#formulario").trigger("reset");
+    });
+
 });
