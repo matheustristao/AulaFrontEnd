@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
     $("#mobileMenu").click(function () {
-        $('.ui.labeled.icon.sidebar')
-                .sidebar('toggle');
+        $('.ui.labeled.icon.sidebar').sidebar('toggle');
     });
 
     $("figure").click(function () {
@@ -23,9 +22,7 @@ $(document).ready(function () {
     $('.ui.checkbox').checkbox();
 
     $("#termos").click(function () {
-        $('.ui.modal')
-                .modal('show')
-                ;
+        $('.ui.modal').modal('show');
     });
 
     $("button#submit").click(function () {
